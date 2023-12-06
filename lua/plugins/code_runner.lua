@@ -4,6 +4,11 @@ return {
     config = function()
       require("code_runner").setup({
         filetype = {
+          haskell = {
+            "cd $dir && ",
+            "ghc $fileName &&",
+            "$dir/$fileNameWithoutExt",
+          },
           go = {
             "cd $dir &&",
             "go run $fileName",
