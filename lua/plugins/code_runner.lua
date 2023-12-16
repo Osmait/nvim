@@ -19,12 +19,13 @@ return {
             --  "java $fileNameWithoutExt",
           },
           python = "python3 -u",
-          typescript = "deno run",
+          typescript = "bun run",
           rust = {
             "cd $dir &&",
             "rustc $fileName &&",
             "$dir/$fileNameWithoutExt",
           },
+          lua = "lua",
         },
       })
     end,
