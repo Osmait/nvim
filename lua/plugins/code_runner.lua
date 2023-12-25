@@ -18,6 +18,7 @@ return {
             "java $fileName &&",
             --  "java $fileNameWithoutExt",
           },
+          dart = "dart run ",
           python = "python3 -u",
           typescript = "bun run",
           rust = {
