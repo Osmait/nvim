@@ -18,6 +18,11 @@ return {
             "java $fileName &&",
             --  "java $fileNameWithoutExt",
           },
+          kotlin = {
+            "cd $dir &&",
+            "kotlinc $fileName -include-runtime -d  $fileName.jar &&",
+            "java -jar $fileName.jar",
+          },
           dart = "dart run ",
           python = "python3 -u",
           typescript = "bun run",
