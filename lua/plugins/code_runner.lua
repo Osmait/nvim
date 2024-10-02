@@ -16,7 +16,7 @@ return {
           java = {
             "cd $dir &&",
             "java $fileName &&",
-            --  "java $fileNameWithoutExt",
+            "java $fileNameWithoutExt",
           },
           kotlin = {
             "cd $dir &&",
