@@ -22,6 +22,8 @@ return {
       ["g\\"] = "actions.toggle_trash",
     },
     use_default_keymaps = false,
+
+    default_file_explorer = true,
   },
   -- Optional dependencies
   dependencies = { "nvim-tree/nvim-web-devicons" },
